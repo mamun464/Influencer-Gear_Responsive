@@ -7,6 +7,7 @@ body {
 }
 
 
+
 header {
     margin: 87px 120px;
 }
@@ -95,6 +96,113 @@ nav ul a {
 
 }
 
+.brand-container,
+.Popular-Collection-section {
+    margin: 70px 150px;
+}
+
+.horizontal-boder {
+    width: 1110px;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0.60) 50.38%, rgba(192, 204, 218, 0.10) 100%);
+}
+
+.brand-name-container {
+    padding: 35px 0;
+}
+
+.brand-name-container img {
+
+    margin-right: 62px;
+}
+
+
+.section-title {
+    text-align: center;
+}
+
+
+
+.card * {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    width: 329px;
+    height: 476px;
+}
+
+.card img {
+    border-radius: 5px;
+    padding: 17px 14px;
+    padding-bottom: 0px;
+}
+
+.item-name {
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    padding-left: 14px;
+    margin-bottom: 6px;
+}
+
+.item-price {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+    padding-left: 14px;
+    margin-bottom: 6px;
+    /* 36px */
+}
+
+.item-rating {
+    color: #5E6366;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    /* 157.143% */
+    letter-spacing: 0.1px;
+    padding-left: 14px;
+    margin-bottom: 6px;
+}
+
+.item-despt {
+    color: #787885;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 143%;
+    letter-spacing: 0.252px;
+    padding-left: 14px;
+    margin-bottom: 6px;
+    width: 196px;
+}
+
+.card-container{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px; 
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* responsive for small device */
@@ -149,5 +257,42 @@ nav ul a {
     nav ul {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .horizontal-boder {
+        display: none;
+    }
+
+    .brand-name-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* Change to 3 columns for mobile */
+    }
+
+
+
+    .brand-container {
+        margin: 5px 5px;
+    }
+
+    .brand-name-container img {
+
+        width: 80%;
+
+        margin-right: 2px;
+    }
+
+    .brand-name-container {
+        justify-items: center;
+        grid-row-gap: 20px;
+
+    }
+
+    .Popular-Collection-section {
+        margin: 0;
+    }
+    .card-container {
+        padding: 5px;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
