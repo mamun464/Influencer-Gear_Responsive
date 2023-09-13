@@ -46,11 +46,11 @@ nav ul a {
 .camera-img {
     background-image: url('../images/Circle\ design.svg');
     background-repeat: no-repeat;
-   
+
 
 }
 
-.camera-img img{
+.camera-img img {
     position: relative;
     top: 30px;
 }
@@ -93,4 +93,61 @@ nav ul a {
     font-size: 1rem;
     font-weight: 700;
 
+}
+
+
+
+/* responsive for small device */
+
+@media screen and (max-width:576px) {
+    header {
+        margin: 5px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    nav h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+
+    }
+
+
+    .banner-title,
+    .banner-despt {
+        width: 80%;
+        height: 80%;
+        text-align: center;
+
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-container img {
+        width: 90%;
+
+    }
+
+    .camera-img {
+        background-size: cover;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
